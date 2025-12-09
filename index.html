@@ -3,36 +3,366 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Tangeda Village – Official Site</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <h1>Welcome to Tangeda</h1>
-    <p>Founded by The King Anumula Machireddy Garu</p>
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="container top-bar-content">
+      <div class="logo-area">
+        <span class="logo-title">Tangeda</span>
+        <span class="logo-subtitle">Heritage • Culture • Community</span>
+      </div>
+      <div class="search-area">
+        <input type="text" placeholder="Search Tangeda..." />
+        <button aria-label="Search">🔍</button>
+        <button aria-label="Voice Search">🎤</button>
+      </div>
+    </div>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="history.html">History</a>
-    <a href="festivals.html">Festivals</a>
-    <a href="temples.html">Temples</a>
-    <a href="people.html">People</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="news.html">News</a>
-    <a href="recipes.html">Recipes</a>
-    <a href="services.html">Services</a>
-    <a href="map.html">Map</a>
-    <a href="directory.html">Directory</a>
-    <a href="guestbook.html">Guestbook</a>
-    <a href="contact.html">Contact</a>
+
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="container nav-container">
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#festivals">Festivals</a></li>
+        <li><a href="#temples">Temples</a></li>
+        <li><a href="#people">People</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#directory">Directory</a></li>
+        <li><a href="#guestbook">Guestbook</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#travel">Travel Info</a></li>
+      </ul>
+    </div>
   </nav>
-  <main>
-    <h2>Index</h2>
-    <p>This is the index page for the Tangeda website.</p>
-  </main>
-  <footer>
-    <p>© 2025 Tangeda Village. All rights reserved.</p>
+
+  <!-- Hero / Home -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div>
+        <h1>Welcome to Tangeda</h1>
+        <p class="hero-subtitle">
+          A village rich in culture and history, founded under the legacy of
+          <strong>The King Anumula Machireddy Garu</strong>.
+        </p>
+        <p>
+          Discover Tangeda’s festivals, temples, people, and services that keep
+          the community together.
+        </p>
+        <div class="hero-actions">
+          <a href="#about" class="btn primary">Discover Tangeda</a>
+          <a href="#travel" class="btn secondary">How to Reach</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Quick Facts</h2>
+        <ul>
+          <li><strong>Location:</strong> Tangeda Village, India</li>
+          <li><strong>Known For:</strong> Temples, Festivals & Heritage</li>
+          <li><strong>Community:</strong> Warm, welcoming, and united</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Tangeda</h2>
+      <p>
+        Tangeda is a historic village with deep cultural roots and long-standing
+        traditions. It has grown over the years while preserving its heritage,
+        respect for elders, and close-knit community spirit.
+      </p>
+      <div class="grid two-cols">
+        <div class="card">
+          <h3>Rich Heritage</h3>
+          <p>
+            Founded centuries ago, Tangeda carries the legacy of
+            <strong>The King Anumula Machireddy Garu</strong>. The village is
+            home to historic temples, age-old customs, and stories passed down
+            through generations.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Cultural Harmony</h3>
+          <p>
+            People of different communities live together with unity and
+            mutual respect. Festivals, events, and social gatherings bring
+            everyone together throughout the year.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Festivals -->
+  <section id="festivals" class="section alt">
+    <div class="container">
+      <h2>Festivals of Tangeda</h2>
+      <p>
+        Festivals in Tangeda are celebrated with devotion, color, and togetherness.
+      </p>
+      <div class="grid three-cols">
+        <div class="card">
+          <h3>Sankranthi</h3>
+          <p>
+            Harvest festival with rangoli, traditional games, and family gatherings.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Ganesh Chaturthi</h3>
+          <p>
+            Idols of Lord Ganesha are installed across the village and immersed
+            with grand processions.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Muharram & Other Events</h3>
+          <p>
+            Marking unity beyond religion, people come together to participate
+            in multiple cultural and spiritual events.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Temples -->
+  <section id="temples" class="section">
+    <div class="container">
+      <h2>Temples & Worship Places</h2>
+      <p>
+        Tangeda is home to several revered temples and places of worship that are
+        central to the spiritual life of the village.
+      </p>
+      <div class="grid three-cols">
+        <div class="card">
+          <h3>Main Village Temple</h3>
+          <p>
+            The central temple where major festivals and rituals are conducted.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Local Shrines</h3>
+          <p>
+            Smaller shrines across the village preserve local deities and customs.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Community Gatherings</h3>
+          <p>
+            Temples often act as gathering points for cultural and social functions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- People -->
+  <section id="people" class="section alt">
+    <div class="container">
+      <h2>People of Tangeda</h2>
+      <p>
+        The strength of Tangeda lies in its people – hardworking, kind, and
+        always ready to support one another.
+      </p>
+      <div class="grid two-cols">
+        <div class="card">
+          <h3>Community Leaders</h3>
+          <p>
+            Elders and respected leaders guide the village, support social causes,
+            and preserve traditions.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Youth & Future</h3>
+          <p>
+            The younger generation is educated, ambitious, and connected to both
+            modern life and traditional values.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>Photo Gallery</h2>
+      <p>(You can add real photos later – for now, this is a placeholder layout.)</p>
+      <div class="gallery-grid">
+        <div class="gallery-item">Festival Scene</div>
+        <div class="gallery-item">Temple View</div>
+        <div class="gallery-item">Village Landscape</div>
+        <div class="gallery-item">Community Event</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section id="news" class="section alt">
+    <div class="container">
+      <h2>News & Updates</h2>
+      <ul class="news-list">
+        <li>
+          <strong>Village Development Programs</strong>
+          <span>– New infrastructure and community projects in progress.</span>
+        </li>
+        <li>
+          <strong>Festival Announcements</strong>
+          <span>– Stay tuned for dates and schedules of upcoming celebrations.</span>
+        </li>
+        <li>
+          <strong>Community Meetings</strong>
+          <span>– Regular meetings to discuss welfare, education, and services.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Community Services</h2>
+      <div class="grid three-cols">
+        <div class="card">
+          <h3>Education</h3>
+          <p>
+            Schools and educational initiatives support children and youth to build
+            a better future.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Healthcare</h3>
+          <p>
+            Local health facilities and camps help maintain the well-being of residents.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Infrastructure</h3>
+          <p>
+            Electricity, roads, water supply, and public spaces serve the daily needs
+            of the village.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Directory -->
+  <section id="directory" class="section alt">
+    <div class="container">
+      <h2>Village Directory</h2>
+      <p>
+        List important contacts like village heads, schools, health centers, and
+        emergency numbers here.
+      </p>
+      <table class="directory-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Contact Person</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Village Head</td>
+            <td>–</td>
+            <td>–</td>
+          </tr>
+          <tr>
+            <td>School</td>
+            <td>–</td>
+            <td>–</td>
+          </tr>
+          <tr>
+            <td>Health Center</td>
+            <td>–</td>
+            <td>–</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Guestbook -->
+  <section id="guestbook" class="section">
+    <div class="container">
+      <h2>Guestbook</h2>
+      <p>Share your memories or wishes for Tangeda.</p>
+      <form class="guestbook-form">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-row">
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn primary">Submit Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="grid two-cols">
+        <div>
+          <p>
+            For any queries about Tangeda, events, or information updates, please reach out.
+          </p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> example@tangeda.com</li>
+            <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <div class="form-row">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-row">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-row">
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Info -->
+  <section id="travel" class="section">
+    <div class="container">
+      <h2>Travel Information</h2>
+      <p>
+        Add details about how to reach Tangeda by bus, train, or road, and the nearest
+        towns or cities.
+      </p>
+      <ul class="travel-list">
+        <li><strong>Nearest Town:</strong> (Add here)</li>
+        <li><strong>Nearest Railway Station:</strong> (Add here)</li>
+        <li><strong>Bus Routes:</strong> (Add major routes and numbers)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2025 Tangeda Village. All rights reserved.</p>
+      <p>Developed with ❤️ for the people of Tangeda.</p>
+    </div>
   </footer>
 </body>
 </html>
+
